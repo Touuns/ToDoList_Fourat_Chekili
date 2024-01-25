@@ -1,0 +1,138 @@
+body {
+    background-color: rgb(255, 239, 224);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-family:'Courier New', Courier, monospace;
+    font-family:'Verdana, Geneva, Tahoma, sans-serif'
+
+}
+
+.divToDo{
+    border : 10px solid black!important;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 30px;
+    margin: 35px;
+}
+
+h2 {
+    padding-top: 10px;
+    color :#d0a96b;
+    font-family: 'comic sans ms' ;
+}
+
+input {
+    margin-top: 10px;
+    border-radius: 1.8em;
+    overflow: none;
+    font-family: 'Courier New' ;
+    flex: 1;
+}
+
+
+input::placeholder {
+    padding : 10px !important;
+    font-family: 'comic sans ms' ;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+}
+
+.category div {
+    border : 0.5px   rgb(227, 209, 192);
+    border-radius : 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.btnPlus{
+    height: 40px;
+    width: 40px;
+    cursor : pointer;
+    background-color:rgb(255, 239, 224) ;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.btnCategory{
+    cursor: pointer;
+    background-color:rgb(255, 239, 224) ;
+    padding: 10px;
+    font-family: 'comic sans ms';
+}
+
+.task{
+    height: 50%;
+}
+
+.listToDo{
+    /* border: 2px solid red ; */
+    margin-top: 10px;
+    height: 80%;
+    width: 90%;
+    background: linear-gradient(#FFEFE0,#e6d49e,#FFEFE0, #e6d49e);
+    overflow: none;
+    border-radius: 3%;
+}
+
+.Lee{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red;     */
+    gap : 10px;
+    font-family: 'comic sans ms';
+}
+
+.btnDone{
+    height: 40px;
+    width: 40px;
+    cursor : pointer;
+    background-color:rgb(255, 239, 224) ;
+    padding: 10px;
+    border-radius: 40px;
+    gap : 40%
+}
+
+
+.btnEdit {
+    height: 40px;
+    width: 40px;
+    cursor : pointer;
+    background-color:rgb(255, 239, 224) ;
+    padding: 10px;
+    border-radius: 40px;
+    gap : 40%;
+}
+
+.btnDelete{
+    height: 40px;
+    width: 40px;
+    cursor : pointer;
+    background-color:rgb(255, 239, 224) ;
+    padding: 10px;
+    border-radius: 40px;
+    gap : 40%;
+}
+
+.doDone {
+    color: #605d5d;
+    text-decoration: line-through;
+    color: rgb(113, 162, 113);
+}
+
+.btnPlus:hover, .btnCategory:hover, .btnDelete:hover, .btnDone:hover, .btnEdit:hover {
+    background-color: #d0a96b;
+}
